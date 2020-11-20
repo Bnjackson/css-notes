@@ -1,0 +1,40 @@
+/*
+RESPONSIVE DESIGN
+*/
+/*
+em - relative to the font-size of the element.
+rem - relative to font-size of the root element.
+*/
+/*Typography - Viewport units make fluid typography on the web possible. Viewport units refer to a browsers viewport dimensions. For example 1 vw(viewport width) is equal to 1% of the viewports width. The four viewport units are vw:viewport width,
+vh:viewport height, vmin:the smaller value of the viewports width and height, vmax:the larger value of the viewports width and height.
+*/
+
+html {
+    font-size: 2vw;
+}
+/*By setting the root element to 2vw, we have changed the root em because all em or rem units are related to the root em so they will now all be fluid.*/
+
+.font-size h1 {
+    font-size: 3em;
+}
+/*A heading of 3em is now equivalent to 6vw because this is triple the current .font-size of 2vw.*/
+
+.font-size p {
+    font-size: 0.8em;
+    font-size: clamp();
+}
+
+/*One problem with using viewport is viewport units are always relative to the viewport, on very small screens you could end up with very small font sizes and large screens the text can be too big.*/
+
+/*One solution is to use media queries at a certain screen size breakpoint that sets the font size in a non-relative unit.*/
+
+@media screen and (max-width: 500px) {
+    .font-size h1 {
+        font-size: 30px;
+        color: blue;
+    }
+}
+
+/*There is also a concept called CSS locks using the css calc function to slowly scale between a min and a max font size.*/
+
+
