@@ -38,3 +38,34 @@ html {
 /*There is also a concept called CSS locks using the css calc function to slowly scale between a min and a max font size.*/
 
 
+
+
+/*Flexbox
+Is a module that provides a more efficient way to lay out, align and distribute space among items in a container even when the size is dynamic. 
+The idea behind flexbox is to give the container the ability to alter its items width, height and order to best fill in all avalible free space or shrinks them to prevent overflow.
+Flexbox unlike block and inline is direction agnostic.
+Flexbox is most appropriate for components of an application and small scale layouts while grid layout is intended for larger scale layouts. 
+*/
+
+
+
+.flex-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-div .box {
+    height: 100px;
+    width: 100px;
+    background-color: #000;
+    margin-left: 1px;
+}
+
+
+
+
+
+
+
+
+
