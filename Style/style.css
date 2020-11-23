@@ -47,19 +47,92 @@ Flexbox unlike block and inline is direction agnostic.
 Flexbox is most appropriate for components of an application and small scale layouts while grid layout is intended for larger scale layouts. 
 */
 
-
-
-.flex-div {
-    display: flex;
-    justify-content: space-between;
-}
-
-.flex-div .box {
+.box {
     height: 100px;
     width: 100px;
     background-color: #000;
     margin-left: 1px;
+    margin-bottom: 2px;
 }
+
+.flex-div-1 {
+    display: flex;
+
+}
+
+.flex-div-2 {
+    display: inline-flex;
+}
+
+.flex-div-3 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-div-4 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-div-5 {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-div-6 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-div-7 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-div-8 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*
+PROPERTIES FOR THE PARENT(FLEX CONTAINER)
+*/
+
+/*Display 
+This defines a flex container inline-flex or flex(block). It enables a flex context for all its direct children. Container with inline-flex will behave like a inline element and a container with flex will behave like a block element. 
+
+Flex Direction
+This establishes the main axis defining the direction flex items are placed in the flex container. 
+row -  DEFAULT left to right 
+row-reverse - right to left 
+column - top to bottom
+column-reverse - bottom to top
+
+Flex-wrap
+By default flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property. 
+nowrap - default all flex items will be on one line 
+wrap - flex items will wrap onto multiple lines from top to bottom.
+wrap-reverse - flex items will wrap onto multiple lines from bottom to top.
+
+Flex-Flow
+Is a shorthand for the flex-direction and flex-wrap properties the default value is row nowrap
+
+Justify-content 
+This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible or are flexible but have reached their maximum size. 
+flex-start - DEFAULT items are packed towards the start of the flex-direction.
+flex-end - items are packed towards the start of the writing-mode direction.
+start - Items are packed toward the start of the writing mode direction
+end - Items are packed toward the start of the writing mode direction
+left - Items are too the left of the container 
+right - Items are too the right of the container 
+center - Items are centered.
+space between - Items are evenly distributed in the line
+space around - Items are evely distributed in the line with equal space around them 
+space evenly -  items are distributed so that the spacing between any two items (and the space to the edges) is equal.
+*/
+
+
+
 
 
 
